@@ -17,12 +17,14 @@ namespace WhatsConsole
              Contato c2 = new Contato();
             c2.Nome = "Mãe";
             c2.Telefone = 961541277;
+            c2.Texto = "Bom dia mãe";
 
             c2.Cadastrar(c2);
 
              Contato c3 = new Contato();
             c3.Nome = "Pai";
             c3.Telefone = 948521374;
+            c3.Texto = "Bom dia pai";
 
             c3.Cadastrar(c3);
 
@@ -31,8 +33,16 @@ namespace WhatsConsole
 
             foreach (Contato ct in cont)
             {
-                Console.WriteLine($"{ct.Nome} - {ct.Telefone}");
+                Console.WriteLine($"{ct.Nome} - {ct.Telefone} - mensagem enviada: {ct.Texto} ");
             }
+            
+            
+
+           
+            
+
+        
+
 
         }
     }

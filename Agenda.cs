@@ -10,6 +10,9 @@ namespace WhatsConsole
         List<Contato> contato = new List<Contato>();
         private const string PATH = "Database/agenda.csv";
         private const string PATHDIRECTORY = "Database";
+       
+
+
         public Agenda(){
 
             if(!Directory.Exists(PATHDIRECTORY))
@@ -65,6 +68,7 @@ namespace WhatsConsole
                 Contato c = new Contato();
                 c.Nome = Separate(data[0]);
                 c.Telefone = Int32.Parse(Separate(data[1]));
+                c.Texto = Separate(data[2]);
 
                 cont.Add(c);
 
@@ -75,7 +79,7 @@ namespace WhatsConsole
 
         public string PrepararLinha(Contato contato)
         {
-          return $"name={contato.Nome}; Telefone={contato.Telefone}";
+          return $"name={contato.Nome}; Telefone={contato.Telefone}; Mensagem={contato.Texto};";
         }
 
        

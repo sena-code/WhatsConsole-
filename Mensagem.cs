@@ -1,12 +1,11 @@
+using System.Collections.Generic;
+using System.IO;
+
 namespace WhatsConsole
 {
-    public class Mensagem : Contato
+    public class Mensagem : Agenda
     {
-        public string Texto { get; set; }
-        public string Destinário { get; set; }
 
-        public string Enviar(Contato cont){
-            return Texto;
-        }
+       
     }
 }
