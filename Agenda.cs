@@ -53,6 +53,7 @@ namespace WhatsConsole
                     //Remove all lines that have the term solicited
                     lines.RemoveAll(z => z.Contains(_cont));
                 }
+                RewriteCSV(lines);
         }
 
         public List<Contato> Listar()
@@ -68,7 +69,7 @@ namespace WhatsConsole
                 Contato c = new Contato();
                 c.Nome = Separate(data[0]);
                 c.Telefone = Int32.Parse(Separate(data[1]));
-                c.Texto = Separate(data[2]);
+                
 
                 cont.Add(c);
 
@@ -79,8 +80,20 @@ namespace WhatsConsole
 
         public string PrepararLinha(Contato contato)
         {
-          return $"name={contato.Nome}; Telefone={contato.Telefone}; Mensagem={contato.Texto};";
+          return $"name={contato.Nome}; Telefone={contato.Telefone};";
         }
+
+          private void RewriteCSV(List<string> lines){
+
+
+                using(StreamWriter output = new StreamWriter(PATH))
+                {
+                    foreach(string ln in lines)
+                    {
+                        output.Write(ln + "\n");
+                    }
+                }
+          }
 
        
         

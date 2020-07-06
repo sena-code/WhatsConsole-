@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vinicius\\Desktop\\WhatsConsole\\WhatsConsole.csproj": {}
+    "C:\\Users\\Vinicius\\Desktop\\Senai\\WhatsConsole\\WhatsConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vinicius\\Desktop\\WhatsConsole\\WhatsConsole.csproj": {
+    "C:\\Users\\Vinicius\\Desktop\\Senai\\WhatsConsole\\WhatsConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vinicius\\Desktop\\WhatsConsole\\WhatsConsole.csproj",
+        "projectUniqueName": "C:\\Users\\Vinicius\\Desktop\\Senai\\WhatsConsole\\WhatsConsole.csproj",
         "projectName": "WhatsConsole",
-        "projectPath": "C:\\Users\\Vinicius\\Desktop\\WhatsConsole\\WhatsConsole.csproj",
+        "projectPath": "C:\\Users\\Vinicius\\Desktop\\Senai\\WhatsConsole\\WhatsConsole.csproj",
         "packagesPath": "C:\\Users\\Vinicius\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vinicius\\Desktop\\WhatsConsole\\obj\\",
+        "outputPath": "C:\\Users\\Vinicius\\Desktop\\Senai\\WhatsConsole\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vinicius\\AppData\\Roaming\\NuGet\\NuGet.Config"
